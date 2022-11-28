@@ -1,0 +1,26 @@
+version: '2.4'
+
+networks:
+  nx: 
+    driver: bridge
+
+services:
+  nx:
+    build: ./build
+    #image: youngnsx/nx-cn-rpi:4.2.0.32840
+    container_name: nx
+    restart: always
+    environment:
+      - TZ=Asia/Taipei
+    volumes:
+      - ./apps/nx/config:/config
+      - ./apps/nx/recordings:/archive/HD\ Witness\ Media
+      - ./tmp:/tmp 
+    expose:
+      - 7001
+    ports:
+      - 7001:7001
+    mac_address: 02:42:ac:11:ac:01 # mac位置必須在02:42:ac:11:00:00 ~ 02:42:ac:11:ff:ff 之間 
+    networks:
+      - nx
+   # command: ping 8.8.8.8
