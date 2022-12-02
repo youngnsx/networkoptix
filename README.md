@@ -2,5 +2,5 @@
 - **version:**4.2.0.32840
 - **component:**server
 - **platform:**linux
-- **arch:**arm
+- **arch:**x86
 - **modification:**bpi
