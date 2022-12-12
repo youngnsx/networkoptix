@@ -10,7 +10,7 @@ RUN dpkg -x nxwitness_cn-server-4.2.0.32840-linux64.deb /
 
 # RUN dpkg-reconfigure -f noninteractive tzdata
 
-# RUN mkdir -p /archive "/archive/HD Witness Media" /config
+RUN mkdir -p /archive "/archive/HD Witness Media" /config /media
 # ADD ./src /src
 # RUN /src/extract.sh
 
