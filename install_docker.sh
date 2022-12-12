@@ -4,7 +4,7 @@
 curl -sSL https://get.docker.com | sh
 
 # Added User to Docekr Group
-sudo usermod -aG docker pi
+sudo usermod -aG docker 
 
 # Install Pip3
 # curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py && sudo python3 get-pip.py

@@ -7,9 +7,9 @@ RUN apt-get update \
 
 # RUN dpkg-reconfigure -f noninteractive tzdata
 
-RUN mkdir -p /archive "/archive/HD Witness Media" /config
-ADD ./src /src
-RUN /src/extract.sh
+RUN mkdir -p /archive "/archive/HD Witness Media" /config /Media
+# ADD ./src /src
+# RUN /src/extract.sh
 
 WORKDIR /opt/networkoptix
 

@@ -15,6 +15,7 @@ services:
     volumes:
       - ./apps/nx/config:/config
       - ./apps/nx/recordings:/archive/HD\ Witness\ Media
+      - ./apps/nx/media:/media
       - ./tmp:/tmp 
     expose:
       - 7001
